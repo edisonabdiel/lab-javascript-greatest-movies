@@ -52,7 +52,7 @@ function ratesAverage(arr) {
     let avgArr = arr.reduce((sum, rate) => {
         return sum + rate.rate
     }, 0)
-       return (avgArr / arr.length).toFixed(2);
+       return Number((avgArr / arr.length).toFixed(2));
 }
 
 ratesAverage(movies)
@@ -69,11 +69,13 @@ function dramaMoviesRate(arr) {
         
         return sum + rate.rate}, 0)
 
-    return (dramaRate / dramaOnly.length).toFixed(2);
+    return Number((dramaRate / dramaOnly.length).toFixed(2));
 }
 
 dramaMoviesRate(movies)
 
 // Iteration 6: Time Format - Turn duration of the movies from hours to minutes
+
+function turnHoursToMinutes(){}
 
 // BONUS Iteration: Best yearly rate average - Best yearly rate average
